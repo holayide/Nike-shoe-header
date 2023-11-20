@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Roboto:wght@300;400;500;700&display=swap');
 
-/* font-family: 'Bebas Neue', sans-serif; */
-/* font-family: 'Questrial', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body {
-    width: 100%;
     height: 120vh;
     background-image: linear-gradient(120deg, #842163, #EA4600, #F38963, #AED1CC);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 .container {
     width: 70%;
@@ -57,6 +53,9 @@ body {
     padding: 5px;
     background-color: #000;
 }
+.menu {
+    display: none;
+}
     /* End of header */
 
     /* hero */
@@ -65,7 +64,6 @@ body {
 }
 .hero .hero-text { 
     position: relative;
-    /* right: 30px; */
 }
 .hero .hero-text h1 {
     font-family: 'Roboto', sans-serif;
@@ -76,8 +74,6 @@ body {
     z-index: 2;
 }
 .hero .hero-text .circle {
-    /* width: 10vw; */
-    /* height: 10vh; */
     border-radius: 50%;
     background-image: linear-gradient(90deg, #e4af65, #f9decd);
     position: absolute;
@@ -150,6 +146,7 @@ body {
     padding-left: 8px;
     line-height: 2;
 }
+/* footer */
 hr {
     border: 1px solid black;
     margin-top: 60px;
@@ -218,10 +215,170 @@ hr {
 }
 
 @media(max-width: 1500px) {
-    .container {
-        /* width: 70%; */
-        background-color: yellow;
-        /* margin: 0 auto 30px; */
+    .hero .circle-left {
+        width: 30%;
+        height: 30%;
+    }
+    .cured-text {
+        font-size: .2rem;
+        letter-spacing: rem;
+    }
+    .side {
+        width: 40%;
     }
 }
-/* 1490 */
+
+@media(max-width: 1270px) {
+    .hero .hero-text h1 {
+        font-size: 8rem;
+    }
+    .price {
+        gap: 10px;
+    }
+}
+
+@media(max-width: 1190px) {
+    body {
+        height: 135vh;
+    }
+    .nav-items {
+        gap: 30px;
+    }
+    .icons {
+        gap: 10px;
+    }
+    .hero .hero-text h1 { 
+        font-size: 7rem;
+        padding-top: 7%;
+    }
+    .hero .circle-left, 
+    .nike-note,
+    .lock-foot {
+        display: none;
+    }
+    .black-nike img {
+        margin-top: 0;
+    }
+    .side {
+        width: 50%;
+    }
+    .side h4 {
+        padding: 0 5px 10px;
+        font-size: .9rem;
+    }
+    .price > div:first-of-type {
+        margin: auto;
+    }
+    .middle {
+        padding: 20px 50px 0;
+    }
+}
+
+@media(max-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 8% 0;
+    }
+    .menu {
+        display: revert;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .nav-items {
+        display: none;
+    }
+    .hero .hero-text h1 {  
+        font-size: 5rem;
+    }
+    .side {
+        width: 60%;
+    }
+    .foot .box img {
+        width: 60%;
+        margin: 15% 0 0 20%;
+    }
+    .middle {
+        padding: 30px 10px 0;
+    }
+    .middle p {
+        font-size: .6rem;
+    }
+    .middle button {
+        padding: 5px 20px;
+        font-size: .5rem;
+        border-radius: 30px;
+        background-color: #000;
+        color: white;
+    }
+}
+
+/* mobile */
+@media(max-width: 700px) {
+    body {
+        padding-top: 35px;
+        height: 120vh;
+    }
+    .container {
+        margin: 0 auto 5px;
+    }
+    .header {
+        padding: 5% 5% 0;
+    }
+    .menu {
+        display: revert;
+        width: 50px;
+    }
+    .logo img {
+        width: 60px;
+    }
+    .icons {
+        display: none;
+    }
+    /* end of header */
+
+     /* hero */
+    .hero {
+        padding: 0 8%;
+    }
+    .hero .hero-text h1 {
+        font-size: 5rem;
+        padding-top: 8%;
+    }
+    /* end of nike air */
+
+    .black-nike {
+        position: relative;
+        z-index: 3;
+    }
+    .black-nike img {
+        transform: rotate(-35deg);
+        width: 90%;
+    }
+    /* footer */
+    hr,  
+    .side {
+       display: none;
+    }
+    .foot {
+        margin-left: 10px;
+    }
+    .middle {
+        padding: 0;
+    }
+    .middle h2 {
+        font-size: 1.5rem;
+        padding: 20px 0 10px;
+    }
+    .middle p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+    .middle button {
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+
+}
