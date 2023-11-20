@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Questrial', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(120deg, #842163, #EA4600, #F38963, #AED1CC);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+.container {
+    width: 70%;
+    background-color: #ffff;
+    margin: 0 auto 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8% 0;
+}
+.logo img {
+    width: 80px;
+}
+.nav {
+    display: inline-flex;
+    align-items: center;
+}
+.nav li {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+.nav-items {
+    display: flex;
+    gap: 54px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+.icons {
+    display: flex;
+    gap: 20px;
+}
+.lock img {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #000;
+}
+    /* End of header */
+
+    /* hero */
+.hero {
+    padding: 0 13%;
+}
+.hero .hero-text { 
+    position: relative;
+    /* right: 30px; */
+}
+.hero .hero-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.hero .hero-text .circle {
+    /* width: 10vw; */
+    /* height: 10vh; */
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #e4af65, #f9decd);
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    z-index: 1;
+}
+/* end of nike air */
+
+.hero .section1 {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+.hero .circle-left {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #842163, #EA4600, #e4af65, #AED1CC);
+    position: relative;
+    left: 50px;
+    top: 40px;
+    overflow: hidden;
+}
+.circle-text {
+    text-align: center;
+    
+}
+.round-circle {
+    margin-top: -10px;
+}
+.cured-text {
+    font-size: .5rem;
+    fill: #ffff;
+    letter-spacing: .08rem;
+}
+#curve {
+    fill: transparent;
+}
+.black-nike {
+    position: relative;
+    z-index: 3;
+}
+.black-nike img {
+    transform: rotate(-35deg);
+    margin-top: -200px;
+}
+.circle-text p {
+    background-color: black;
+    color: white;
+    font-size: .5rem;
+    width: 57%;
+    margin: 17px auto 0;
+    padding: 10px;
+    border-radius: 50% 50% 0 0;
+}
+.nike-note {
+    margin-top: 100px;
+}
+.border1 {
+    border-left: 3px solid black;
+    padding-left: 3px;
+}
+.border2 {
+    border-left: 2px solid black;
+    padding-left: 3px;
+}
+.border3 {
+    border-left: 1px solid black;
+    padding-left: 8px;
+    line-height: 2;
+}
+hr {
+    border: 1px solid black;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+.foot {
+    margin-left: 20px;
+    display: flex;
+}
+.side {
+    width: 25%;
+    position: relative;
+    z-index: 2;
+}
+.side .box {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.side h4, .price {
+    text-align: center;
+}
+.side h4 {
+    padding-bottom: 10px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 15px 0;
+}
+.foot .box img {
+    width: 100%;
+}
+.side1 {
+    border-radius: 50% 50% 0 0;
+    margin-top: -30px;
+    background-color: #FFEED4;
+    margin-bottom: 10px;
+}
+.side2 {
+    border-radius: 50% 50% 0 0;
+    margin-top: 30px;
+    background-color: #FFDCCD;
+}
+.middle {
+    padding: 30px 70px 0;
+    text-align: center;
+}
+.middle h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+.middle p {
+    font-size: .8rem;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.middle button {
+    padding: 5px 20px;
+    font-size: .7rem;
+    border-radius: 30px;
+    background-color: #000;
+    color: white;
+}
